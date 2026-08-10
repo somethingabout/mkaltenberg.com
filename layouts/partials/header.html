@@ -1,0 +1,10 @@
+<header class="site-header">
+  <a class="site-name" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+  <nav>
+    <ul>
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL | relURL }}"{{ if eq $.RelPermalink (.URL | relURL) }} class="active"{{ end }}>{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>

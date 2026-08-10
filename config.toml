@@ -1,0 +1,43 @@
+baseURL = "https://www.mkaltenberg.com/"
+languageCode = "en-us"
+title = "Mary Kaltenberg"
+enableRobotsTXT = true
+
+[params]
+  author = "Mary Kaltenberg"
+  description = "Mary Kaltenberg — Assistant Professor of Economics at Pace University"
+  tagline = "Innovation & Labor Economist"
+  affiliation = "Pace University, Economics Department"
+  email = "mkaltenberg@pace.edu"
+  github = "https://github.com/somethingabout"
+  scholar = ""   # add Google Scholar profile URL
+  headshot = "/img/headshot.jpg"
+
+[menus]
+  [[menus.main]]
+    name = "About"
+    url = "/"
+    weight = 10
+  [[menus.main]]
+    name = "Research"
+    url = "/research/"
+    weight = 20
+  [[menus.main]]
+    name = "Teaching"
+    url = "/teaching/"
+    weight = 30
+  [[menus.main]]
+    name = "CV"
+    url = "/cv/"
+    weight = 40
+  [[menus.main]]
+    name = "Code/Data"
+    url = "/code-data/"
+    weight = 50
+  [[menus.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 60
+
+[markup.goldmark.renderer]
+  unsafe = true
