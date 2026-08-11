@@ -32,7 +32,7 @@ title: "Research"
 
 <div class="paper">
 <span class="title">The Knowledge Manager: Wage Premiums in Knowledge Diverse Industries</span><br>
-<span class="meta">Under review, <em>Structural Change and Economic Dynamics</em> · 2025</span>
+<span class="meta">R&R, <em>Structural Change and Economic Dynamics</em> · 2025</span>
 <details><summary>Abstract</summary>
 <p class="abstract">Larger industries are known to pay more, but are these premiums simply a reflection of industry size or are they an expression of increased knowledge diversity? Firms that manage diverse knowledge specializations that are relatively dissimilar from one another have higher coordination costs. Firms reduce burdensome costs by hiring individuals who are effective communicators and offering a wage premium. As a result, workers with higher communication skills sort into industries with a high diversity of knowledge. I test this theory using industry-level data from the United States, where I can empirically observe varying degrees of specialization. I develop a novel way to approximate the variety of specializations in an industry which captures relative knowledge distances between two occupations. Using fixed effects and matched differences regressions, my results show that workers in industries with high knowledge diversity receive a wage premium, especially for jobs with higher social, communication and interpersonal skills.</p>
 </details>
