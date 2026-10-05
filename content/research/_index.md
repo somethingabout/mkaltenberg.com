@@ -24,7 +24,9 @@ title: "Research"
 
 <div class="paper">
 <span class="title">Covid-19 School and Child Care Center Closures and Female Labor Force Participation</span> (with Eric Osborne-Christenson)<br>
-<span class="meta">R&R, <em>Applied Economics Letters</em>·</span>
+<span class="meta">R&R, <em>Applied Economics Letters</em>·<a href="https://www.researchgate.net/publication/396954877_Covid-19_School_and_Child_Care_Center_Closures_and_Female_Labor_Force_Participation
+">Link</a></span>
+
 <details><summary>Abstract</summary>
 <p class="abstract">Despite decades of progress, labor market participation for women remains persistently below their male counterparts. More concerning, progress seems to have stalled in recent decades. The goal of this paper is to explore how childcare responsibilities contribute to this gap. It does this by exploiting random shocks in childcare needs resulting from the COVID-19 pandemic. In doing so, the evidence suggests maternal labor force participation falls by 3.4 percent and 6.1 percent when schools and childcare facilities close, respectively. Young mothers are also hit particularly hard, as are women with multiple or young children. Finally, evidence suggests that the source of these labor market outcomes is intrahousehold bargaining rather than from labor market discrimination alone.</p>
 </details>
@@ -43,9 +45,9 @@ title: "Research"
 
 <div class="paper">
 <span class="title">Wages and Within-Occupation Skill Complementarity</span> (with Verónico, F., Pereira, P.J., and Pinheiro, F.L.)<br>
-<span class="meta">2026</span>
+<span class="meta">2026</span> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7155745">Link</a></span>
 <details><summary>Abstract</summary>
-<p class="abstract">Why do workers in some occupations earn substantially more than others with similar individual characteristics? We argue that within-occupation skill complementarity — the tendency for the skills of an occupation to be mutually reinforcing rather than redundant — provides a combinatorial wage premium. We define a measure of skill complementarity, WOSC7, among the seven most closely related co-used skills. Using a matched employer–employee panel of Portuguese private-sector workers (Portuguese Quadros de Pessoal, N = 12,917,956 observations, 2010–2018), we estimate the effects of skill complementarity on wages using a two-way fixed-effects model with worker and firm fixed effects. We find that a one-standard-deviation increase in WOSC7 (higher complementarity) is associated with a 1.02% wage premium—comparable in magnitude to two additional years of schooling. WOSC7 also predicts a 10.46% rise in the combinatorial value of skill bundles and finds increasing within-occupation wage inequality over 2010–2018. Together, these findings document individual-level evidence consistent with within-occupation skill complementarity, providing wage returns with implications for the distributional consequences of automation in rigid labor markets. \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7155745}{pre-print} </p>
+<p class="abstract">Why do workers in some occupations earn substantially more than others with similar individual characteristics? We argue that within-occupation skill complementarity — the tendency for the skills of an occupation to be mutually reinforcing rather than redundant — provides a combinatorial wage premium. We define a measure of skill complementarity, WOSC7, among the seven most closely related co-used skills. Using a matched employer–employee panel of Portuguese private-sector workers (Portuguese Quadros de Pessoal, N = 12,917,956 observations, 2010–2018), we estimate the effects of skill complementarity on wages using a two-way fixed-effects model with worker and firm fixed effects. We find that a one-standard-deviation increase in WOSC7 (higher complementarity) is associated with a 1.02% wage premium—comparable in magnitude to two additional years of schooling. WOSC7 also predicts a 10.46% rise in the combinatorial value of skill bundles and finds increasing within-occupation wage inequality over 2010–2018. Together, these findings document individual-level evidence consistent with within-occupation skill complementarity, providing wage returns with implications for the distributional consequences of automation in rigid labor markets.  </p>
 </details>
 </div>
 
