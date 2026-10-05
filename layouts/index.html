@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="intro">
-  <img class="headshot" src="{{ .Site.Params.headshot | relURL }}" alt="{{ .Site.Params.author }}">
+  <img class="headshot" src="{{ .Site.Home.RelPermalink }}{{ strings.TrimPrefix "/" .Site.Params.headshot }}" alt="{{ .Site.Params.author }}">
   <h1>{{ .Site.Params.author }}</h1>
   <p class="tagline">{{ .Site.Params.tagline }}</p>
   <p class="affiliation">{{ .Site.Params.affiliation }}</p>
