@@ -11,7 +11,7 @@ enableRobotsTXT = true
   email = "mkaltenberg@pace.edu"
   github = "https://github.com/somethingabout"
   scholar = ""   # add Google Scholar profile URL
-  headshot = "/img/headshot.jpg"
+  headshot = "/img/HIRES_40.JPG"
 
 [menus]
   [[menus.main]]
