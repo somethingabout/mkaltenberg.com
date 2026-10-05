@@ -1,4 +1,5 @@
 {{- $src := .Get "src" | default "/files/cv.pdf" -}}
+{{- $url := printf "%s%s" .Site.Home.RelPermalink (strings.TrimPrefix "/" $src) -}}
 {{- $label := .Get "label" | default "PDF" -}}
 {{- $path := printf "static%s" $src -}}
 {{- $bust := "" -}}
@@ -8,16 +9,16 @@
 
 {{- if fileExists $path }}
 <p class="pdf-actions">
-  <a href="{{ $src }}{{ $bust }}" target="_blank" rel="noopener">Open {{ $label }} in new tab</a>
-  <a href="{{ $src }}{{ $bust }}" download>Download {{ $label }}</a>
+  <a href="{{ $url }}{{ $bust }}" target="_blank" rel="noopener">Open {{ $label }} in new tab</a>
+  <a href="{{ $url }}{{ $bust }}" download>Download {{ $label }}</a>
 </p>
 
 <div class="pdf-embed">
-  <iframe src="{{ $src }}{{ $bust }}#view=FitH" title="{{ $label }}" loading="lazy"></iframe>
+  <iframe src="{{ $url }}{{ $bust }}#view=FitH" title="{{ $label }}" loading="lazy"></iframe>
 </div>
 
 <p class="pdf-mobile">
-  <a class="pdf-button" href="{{ $src }}{{ $bust }}" target="_blank" rel="noopener">View {{ $label }}</a>
+  <a class="pdf-button" href="{{ $url }}{{ $bust }}" target="_blank" rel="noopener">View {{ $label }}</a>
 </p>
 {{- else }}
 <p class="pdf-missing"><em>No file found at <code>{{ $path }}</code>. Add it and rebuild.</em></p>

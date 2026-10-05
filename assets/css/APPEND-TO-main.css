@@ -1,0 +1,42 @@
+/* ============================================================
+   PDF viewer — paste at the END of assets/css/main.css
+   Append only; do not replace the file.
+   ============================================================ */
+
+.pdf-actions {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+}
+
+.pdf-actions a { margin-right: 1.1rem; }
+
+.pdf-embed {
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  overflow: hidden;
+  background: #f7f7f7;
+}
+
+.pdf-embed iframe {
+  display: block;
+  width: 100%;
+  height: 85vh;
+  min-height: 600px;
+  border: 0;
+}
+
+.pdf-mobile { display: none; }
+
+.pdf-button {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .pdf-embed { display: none; }
+  .pdf-mobile { display: block; }
+}
