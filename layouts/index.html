@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="intro">
+  <img class="headshot" src="{{ .Site.Params.headshot | relURL }}" alt="{{ .Site.Params.author }}">
+  <h1>{{ .Site.Params.author }}</h1>
+  <p class="tagline">{{ .Site.Params.tagline }}</p>
+  <p class="affiliation">{{ .Site.Params.affiliation }}</p>
+  <p class="links">
+    <a href="mailto:{{ .Site.Params.email }}">Email</a>
+    <a href="{{ .Site.Params.github }}">GitHub</a>
+    {{ with .Site.Params.scholar }}<a href="{{ . }}">Google Scholar</a>{{ end }}
+  </p>
+</section>
+<section class="content">
+  {{ .Content }}
+</section>
+{{ end }}

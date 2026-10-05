@@ -1,0 +1,24 @@
+{{- $src := .Get "src" | default "/files/cv.pdf" -}}
+{{- $label := .Get "label" | default "PDF" -}}
+{{- $path := printf "static%s" $src -}}
+{{- $bust := "" -}}
+{{- if fileExists $path -}}
+  {{- $bust = printf "?v=%d" (os.Stat $path).ModTime.Unix -}}
+{{- end -}}
+
+{{- if fileExists $path }}
+<p class="pdf-actions">
+  <a href="{{ $src }}{{ $bust }}" target="_blank" rel="noopener">Open {{ $label }} in new tab</a>
+  <a href="{{ $src }}{{ $bust }}" download>Download {{ $label }}</a>
+</p>
+
+<div class="pdf-embed">
+  <iframe src="{{ $src }}{{ $bust }}#view=FitH" title="{{ $label }}" loading="lazy"></iframe>
+</div>
+
+<p class="pdf-mobile">
+  <a class="pdf-button" href="{{ $src }}{{ $bust }}" target="_blank" rel="noopener">View {{ $label }}</a>
+</p>
+{{- else }}
+<p class="pdf-missing"><em>No file found at <code>{{ $path }}</code>. Add it and rebuild.</em></p>
+{{- end }}
