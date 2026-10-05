@@ -1,25 +1,61 @@
 {{- $src := .Get "src" | default "/files/cv.pdf" -}}
-{{- $url := printf "%s%s" .Site.Home.RelPermalink (strings.TrimPrefix "/" $src) -}}
 {{- $label := .Get "label" | default "PDF" -}}
+{{- $base := .Site.Home.RelPermalink -}}
+{{- $url := printf "%s%s" $base (strings.TrimPrefix "/" $src) -}}
 {{- $path := printf "static%s" $src -}}
 {{- $bust := "" -}}
-{{- if fileExists $path -}}
-  {{- $bust = printf "?v=%d" (os.Stat $path).ModTime.Unix -}}
-{{- end -}}
+{{- if fileExists $path -}}{{- $bust = printf "?v=%d" (os.Stat $path).ModTime.Unix -}}{{- end -}}
 
 {{- if fileExists $path }}
-<p class="pdf-actions">
-  <a href="{{ $url }}{{ $bust }}" target="_blank" rel="noopener">Open {{ $label }} in new tab</a>
-  <a href="{{ $url }}{{ $bust }}" download>Download {{ $label }}</a>
-</p>
-
-<div class="pdf-embed">
-  <iframe src="{{ $url }}{{ $bust }}#view=FitH" title="{{ $label }}" loading="lazy"></iframe>
+<div class="pdf-viewer" data-pdf="{{ $url }}{{ $bust }}" data-worker="{{ $base }}js/pdf.worker.min.mjs">
+  <div class="pdf-bar">
+    <span class="pdf-status">Loading {{ $label }}…</span>
+    <a href="{{ $url }}{{ $bust }}" download>Download {{ $label }}</a>
+  </div>
+  <div class="pdf-pages"></div>
+  <noscript>
+    <p><a class="pdf-button" href="{{ $url }}{{ $bust }}">Download {{ $label }}</a></p>
+  </noscript>
 </div>
 
-<p class="pdf-mobile">
-  <a class="pdf-button" href="{{ $url }}{{ $bust }}" target="_blank" rel="noopener">View {{ $label }}</a>
-</p>
+<script type="module">
+import * as pdfjsLib from "{{ $base }}js/pdf.min.mjs";
+
+for (const box of document.querySelectorAll(".pdf-viewer")) {
+  const pages  = box.querySelector(".pdf-pages");
+  const status = box.querySelector(".pdf-status");
+  pdfjsLib.GlobalWorkerOptions.workerSrc = box.dataset.worker;
+
+  const render = async () => {
+    try {
+      const doc = await pdfjsLib.getDocument(box.dataset.pdf).promise;
+      status.textContent = doc.numPages + (doc.numPages === 1 ? " page" : " pages");
+      pages.innerHTML = "";
+      const width = pages.clientWidth || 800;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+      for (let n = 1; n <= doc.numPages; n++) {
+        const page = await doc.getPage(n);
+        const base = page.getViewport({ scale: 1 });
+        const viewport = page.getViewport({ scale: (width / base.width) * dpr });
+        const canvas = document.createElement("canvas");
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+        canvas.style.width = "100%";
+        canvas.className = "pdf-page";
+        pages.appendChild(canvas);
+        await page.render({ canvasContext: canvas.getContext("2d"), viewport }).promise;
+      }
+    } catch (e) {
+      status.textContent = "Could not display the file — use the download link.";
+    }
+  };
+
+  render();
+  let t;
+  window.addEventListener("resize", () => { clearTimeout(t); t = setTimeout(render, 300); });
+}
+</script>
 {{- else }}
-<p class="pdf-missing"><em>No file found at <code>{{ $path }}</code>. Add it and rebuild.</em></p>
+<p><em>No file found at <code>{{ $path }}</code>.</em></p>
 {{- end }}

@@ -1,0 +1,37 @@
+REPLACE the old "/* Embedded PDF viewer */" block at the end of
+assets/css/main.css with everything below.
+(If you cannot find the old block, just append this at the end.)
+
+/* Embedded PDF viewer (pdf.js) */
+.pdf-bar {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.pdf-pages {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.pdf-page {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  background: #fff;
+}
+
+.pdf-button {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  color: var(--accent);
+  text-decoration: none;
+}
