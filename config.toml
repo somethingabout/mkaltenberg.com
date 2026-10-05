@@ -11,7 +11,7 @@ enableRobotsTXT = true
   email = "mkaltenberg@pace.edu"
   github = "https://github.com/somethingabout"
   scholar = "https://scholar.google.com/citations?user=4AJ38JAAAAAJ&hl=en&oi=ao"
-  headshot = "/img/HIRES_40.JPG"
+  headshot = "/img/headshot.jpg"
 
 [menus]
   [[menus.main]]
