@@ -2,4 +2,4 @@
 title: "CV"
 ---
 
-Download my CV as a [PDF](/files/cv.pdf).
+{{< pdf src="/files/cv.pdf" label="CV" >}}

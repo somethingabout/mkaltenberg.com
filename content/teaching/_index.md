@@ -2,11 +2,11 @@
 title: "Teaching"
 ---
 
-I teach across the quantitative and computational core of the economics curriculum at Pace University, with a focus on empirical methods and applied econometrics. My recurring courses include Data Analysis for R & Python and Applied Econometrics at the undergraduate and graduate levels, alongside Introduction to Microeconomics and the Seminar in Economic Research. Across these courses, my teaching centers on building students' ability to conduct original empirical research using modern statistical and programming tools.
+I teach across the quantitative and computational core of the economics curriculum at Pace University, with a focus on empirical methods and applied econometrics. My recurring courses include two Graduate level courses: Data Analysis for R & Python and Applied Econometrics and undergraduate courses: Introduction to Microeconomics, Senior Thesis Course (Seminar in Economic Research), and Economics of AI. Across these courses, my teaching centers on building students' ability to conduct original empirical research using modern statistical and programming tools.
 
 ## Teaching Philosophy
 
-I believe the best way to teach economics is through applied real-world examples in an active environment. My pedagogical approach is to challenge students by asking questions and to utilize classroom activities that reiterate the learning objective. This is especially important when teaching econometrics or statistics — the power of these tools is not clearly visible in theory alone, but through application. Students also learn better when objectives are repeated in different ways: data collecting at the lecture, interactive websites, short videos at home, writing reports, and problem sets. Learning is best applied in a community of active and engaged students. My goal as a teacher is to foster this kind of environment.
+I believe the best way to teach economics is through applied real-world examples in an active environment. My pedagogical approach is to challenge students by asking questions and to utilize classroom activities that reiterate the learning objective. This is especially important when teaching econometrics or statistics — the power of these tools is not clearly visible in theory alone, but through application. I believe learning is best applied in a community of active and engaged students. My goal as a teacher is to foster this kind of environment.
 
 ## Courses at Pace University
 
@@ -15,6 +15,7 @@ I believe the best way to teach economics is through applied real-world examples
 - ECO 106 — Introduction to Microeconomics
 - ECO 240 — Quantitative Analysis
 - ECO 270 — Economics of the Internet
+- ECO 273 — Economics of AI
 - ECO 396R — Python & R for Data Analysis
 - ECO 400 — Senior Capstone in Economics (Fall)
 
@@ -41,9 +42,3 @@ I believe the best way to teach economics is through applied real-world examples
 
 - Introduction to Python for Economists (short course, 2017) · [Jupyter notebooks on GitHub](https://github.com/somethingabout/Intro-to-Python-using-Jupyter)
 
-## Open Syllabi
-
-Courses I never taught, but prepared a syllabus for and hope are of some use to the world:
-
-- Micro for a Digitized Economy (graduate level)
-- Applied Empirical Microeconomics (graduate level)
