@@ -1,0 +1,9 @@
+{{- $home := .Site.Home.RelPermalink -}}
+{{- $src := printf "%s%s" $home (strings.TrimPrefix "/" (.Get "src")) -}}
+{{- $alt := .Get "alt" | default (.Get "caption") -}}
+<figure class="fig">
+  <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy">
+  {{- with .Get "caption" }}
+  <figcaption>{{ . | markdownify }}</figcaption>
+  {{- end }}
+</figure>

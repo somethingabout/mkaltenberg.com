@@ -23,9 +23,15 @@ enableRobotsTXT = true
     url = "/research/"
     weight = 20
   [[menus.main]]
+    identifier = "teaching"
     name = "Teaching"
     url = "/teaching/"
     weight = 30
+  [[menus.main]]
+    parent = "teaching"
+    name = "EconHack"
+    url = "/teaching/econhack/"
+    weight = 31
   [[menus.main]]
     name = "CV"
     url = "/cv/"
