@@ -7,6 +7,7 @@
       <li{{ if .HasChildren }} class="has-sub"{{ end }}>
         <a href="{{ .URL }}"{{ if eq $cur .URL }} class="active"{{ end }}>{{ .Name }}</a>
         {{- if .HasChildren }}
+        <button class="sub-toggle" type="button" aria-expanded="false" aria-label="Show {{ .Name }} submenu">&#9662;</button>
         <ul class="submenu">
           {{- range .Children }}
           <li><a href="{{ .URL }}"{{ if eq $cur .URL }} class="active"{{ end }}>{{ .Name }}</a></li>
@@ -18,3 +19,18 @@
     </ul>
   </nav>
 </header>
+<script>
+document.querySelectorAll(".sub-toggle").forEach(function (btn) {
+  btn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    var li = btn.closest(".has-sub"), open = li.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open);
+  });
+});
+document.addEventListener("click", function () {
+  document.querySelectorAll(".has-sub.open").forEach(function (li) {
+    li.classList.remove("open");
+    li.querySelector(".sub-toggle").setAttribute("aria-expanded", "false");
+  });
+});
+</script>

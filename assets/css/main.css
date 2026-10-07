@@ -279,3 +279,71 @@ a { color: var(--accent); }
   }
   .submenu a { padding: 0 0 0 1rem; }
 }
+
+/* Nav dropdown */
+.site-header nav li { position: relative; }
+
+.site-header nav ul.submenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 20;
+  min-width: 10rem;
+  margin: 0;
+  padding: 0.4rem 0;
+  gap: 0;
+  list-style: none;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.site-header nav ul.submenu a {
+  display: block;
+  padding: 0.4rem 0.9rem;
+  white-space: nowrap;
+}
+
+/* Tapped open (touch) */
+.site-header nav .has-sub.open > ul.submenu { display: flex; }
+
+/* Hover and keyboard focus, only where hovering actually exists */
+@media (hover: hover) and (pointer: fine) {
+  .site-header nav .has-sub:hover > ul.submenu,
+  .site-header nav .has-sub:focus-within > ul.submenu { display: flex; }
+  .sub-toggle { display: none; }
+}
+
+.sub-toggle {
+  margin-left: 0.2rem;
+  padding: 0.25rem 0.4rem;
+  font: inherit;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.has-sub.open > .sub-toggle { color: var(--accent); }
+
+/* Figures with captions */
+.fig { margin: 2rem 0 0; }
+
+.fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+}
+
+.fig figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
