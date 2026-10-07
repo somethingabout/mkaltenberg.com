@@ -12,4 +12,4 @@ Each year's problem, data sources, and winning presentations are archived below.
 - **[2023 — Mass Shootings in America]({{< relref "2023-mass-shootings" >}})** · 2nd Annual
 - **[2022 — Uber vs. NYC Taxi]({{< relref "2022-uber-vs-taxi" >}})** · 1st Annual
 
-{{< fig src="/img/econhack/placeholder.jpg" caption="Replace this image: save your photo to `static/img/econhack/` and update the `src` and `caption` in the last line of `content/teaching/econhack/_index.md`." >}}
+{{< fig src="/img/econhack/winners2025.jpg" caption=":5th Annual EconHack Participants" >}}
