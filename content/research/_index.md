@@ -3,6 +3,11 @@ title: "Research"
 ---
 
 ## Published Papers
+ <div class="paper">
+<span class="title">Covid-19 School and Child Care Center Closures and Female Labor Force Participation</span> (with Eric Osborne-Christenson)<br>
+<span class="meta">Forthcoming, 2026, <em>Applied Economics Letters</em>·<a href="https://www.researchgate.net/publication/396954877_Covid-19_School_and_Child_Care_Center_Closures_and_Female_Labor_Force_Participation
+">Link</a></span>
+
 
 <div class="paper">
 <span class="title">Invention and the Life Course: Age Differences in Patenting</span> (with Adam B. Jaffe & Margie Lachman)<br>
@@ -21,11 +26,6 @@ title: "Research"
 </div>
 
 ## Under Review
-
-<div class="paper">
-<span class="title">Covid-19 School and Child Care Center Closures and Female Labor Force Participation</span> (with Eric Osborne-Christenson)<br>
-<span class="meta">R&R, <em>Applied Economics Letters</em>·<a href="https://www.researchgate.net/publication/396954877_Covid-19_School_and_Child_Care_Center_Closures_and_Female_Labor_Force_Participation
-">Link</a></span>
 
 <details><summary>Abstract</summary>
 <p class="abstract">Despite decades of progress, labor market participation for women remains persistently below their male counterparts. More concerning, progress seems to have stalled in recent decades. The goal of this paper is to explore how childcare responsibilities contribute to this gap. It does this by exploiting random shocks in childcare needs resulting from the COVID-19 pandemic. In doing so, the evidence suggests maternal labor force participation falls by 3.4 percent and 6.1 percent when schools and childcare facilities close, respectively. Young mothers are also hit particularly hard, as are women with multiple or young children. Finally, evidence suggests that the source of these labor market outcomes is intrahousehold bargaining rather than from labor market discrimination alone.</p>
