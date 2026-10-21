@@ -6,7 +6,7 @@ EconHack is an annual policy hackathon I organize at Pace University, co-hosted 
 
 Each year's problem, data sources, and winning presentations are archived below.
 
-- **[2026 — Topic TBD]({{< relref "2026.md" >}})** · 6th Annual · October 22 & 23, 2026
+- **[2026 — Topic Reviving the Third Space]({{< relref "2026" >}})** · 6th Annual · October 22 & 23, 2026
 - **[2025 — Food Insecurity in New York City]({{< relref "2025-food-insecurity" >}})** · 5th Annual
 - **[2024 — NYC Migrant Crisis]({{< relref "2024-migrant-crisis" >}})** · 4th Annual
 - **[2024 — Affordable Housing in NYC]({{< relref "2024-affordable-housing" >}})** · 3rd Annual
